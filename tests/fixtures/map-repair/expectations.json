@@ -1,0 +1,31 @@
+{
+  "fixture_status": "wholly-fictional",
+  "case_purpose": "Failed repair preserves the wrong frame; effective repair changes the frame and receives uptake.",
+  "must_notice": [
+    "Perrin recasts a contradiction claim as an emotional and visibility problem.",
+    "Lyra explicitly rejects that frame.",
+    "Cartographer restores the contradiction as the repairable issue, and Lyra ratifies the repair."
+  ],
+  "may_infer": [
+    "The second repair works because it makes Lyra's original epistemic position receivable."
+  ],
+  "live_alternatives": [
+    "Perrin may have misunderstood the complaint rather than strategically displaced it.",
+    "Lyra's final uptake establishes local resolution, not durable trust."
+  ],
+  "must_not_claim": [
+    "Perrin intended to invalidate Lyra.",
+    "The participants' emotional states are known.",
+    "One successful repair establishes a stable relational transformation."
+  ],
+  "warranted_concepts": [
+    "sequence-and-repair",
+    "enunciation-and-enunciated",
+    "subject-position-and-address"
+  ],
+  "unwarranted_concepts": [
+    "organizing-signifier",
+    "supposed-knowledge"
+  ]
+}
+

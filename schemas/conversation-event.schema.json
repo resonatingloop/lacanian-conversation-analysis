@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lacanian Conversation Analysis event profile",
+  "description": "Optional normalized interchange for an ordered conversation. Analytical annotations do not belong in source messages.",
+  "type": "object",
+  "required": ["profile", "conversation_ref", "messages"],
+  "properties": {
+    "profile": {
+      "const": "conversation-event/v0.1"
+    },
+    "conversation_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "An analysis-local reference; it need not be globally unique."
+    },
+    "title": {
+      "type": ["string", "null"]
+    },
+    "ordering_basis": {
+      "type": "string",
+      "enum": ["source-order", "timestamp", "declared-order", "unknown"]
+    },
+    "boundary_note": {
+      "type": ["string", "null"]
+    },
+    "messages": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/message"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "message": {
+      "type": "object",
+      "required": ["ref", "order", "speaker", "content"],
+      "properties": {
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "speaker": {
+          "type": "string",
+          "minLength": 1
+        },
+        "content": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": ["string", "null"],
+          "description": "Preserve the source representation when normalization would add false precision."
+        },
+        "reply_to": {
+          "type": ["string", "null"]
+        },
+        "participant_kind": {
+          "type": ["string", "null"],
+          "enum": ["human", "agent", "relay", "system", "unknown", null]
+        },
+        "relay": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "required": ["declared_source"],
+              "properties": {
+                "declared_source": {"type": "string", "minLength": 1},
+                "basis": {"type": "string", "enum": ["explicit", "inferred"]},
+                "note": {"type": ["string", "null"]}
+              },
+              "additionalProperties": false
+            }
+          ]
+        },
+        "provenance": {
+          "oneOf": [
+            {"type": "null"},
+            {
+              "type": "object",
+              "properties": {
+                "platform": {"type": ["string", "null"]},
+                "provider": {"type": ["string", "null"]},
+                "model": {"type": ["string", "null"]},
+                "version": {"type": ["string", "null"]},
+                "basis": {"type": "string", "enum": ["source", "declared", "unknown"]}
+              },
+              "additionalProperties": false
+            }
+          ]
+        },
+        "attachments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["kind"],
+            "properties": {
+              "kind": {"type": "string", "minLength": 1},
+              "description": {"type": ["string", "null"]}
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

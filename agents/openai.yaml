@@ -1,0 +1,5 @@
+interface:
+  display_name: "Lacanian Conversation Analysis"
+  short_description: "Evidence-led Lacanian conversation analysis"
+  default_prompt: "Use $lacanian-conversation-analysis to analyze this exchange with the response/v0.1 profile."
+

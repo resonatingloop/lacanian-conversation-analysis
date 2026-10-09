@@ -1,0 +1,30 @@
+{
+  "fixture_status": "wholly-fictional",
+  "case_purpose": "Indirect address and relay alter what must be clarified and who may decide.",
+  "must_notice": [
+    "Courier is the direct addressee and speaker while Briar or Ansel remains the indirect addressee or declared source.",
+    "The initial relay leaves the duration of permission underspecified.",
+    "The final turn limits today's permission and opens a future direct relation."
+  ],
+  "may_infer": [
+    "Relay shapes the conditions under which the permission can be understood and renegotiated."
+  ],
+  "live_alternatives": [
+    "The ambiguity may originate in Ansel's first wording rather than in the relay itself.",
+    "The final invitation to direct contact may be procedural rather than relationally reparative."
+  ],
+  "must_not_claim": [
+    "Courier distorted either message.",
+    "Ansel and Briar were unable or unwilling to speak directly before this exchange.",
+    "Relay has one stable psychological meaning."
+  ],
+  "warranted_concepts": [
+    "subject-position-and-address",
+    "sequence-and-repair"
+  ],
+  "unwarranted_concepts": [
+    "organizing-signifier",
+    "supposed-knowledge"
+  ]
+}
+

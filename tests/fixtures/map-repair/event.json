@@ -1,0 +1,49 @@
+{
+  "profile": "conversation-event/v0.1",
+  "conversation_ref": "fixture-map-repair",
+  "title": "The contradictory route map",
+  "ordering_basis": "source-order",
+  "boundary_note": "Complete fictional exchange.",
+  "messages": [
+    {
+      "ref": "r01",
+      "order": 1,
+      "speaker": "Lyra",
+      "participant_kind": "human",
+      "content": "The route label says north, but the drawn path goes east."
+    },
+    {
+      "ref": "r02",
+      "order": 2,
+      "speaker": "Perrin",
+      "participant_kind": "human",
+      "reply_to": "r01",
+      "content": "Sorry the diagram upset you. I will make the north label larger."
+    },
+    {
+      "ref": "r03",
+      "order": 3,
+      "speaker": "Lyra",
+      "participant_kind": "human",
+      "reply_to": "r02",
+      "content": "The problem is the contradiction, not the label's visibility."
+    },
+    {
+      "ref": "r04",
+      "order": 4,
+      "speaker": "Cartographer",
+      "participant_kind": "human",
+      "reply_to": "r03",
+      "content": "You are right. The line is misdrawn; I will redraw it north to match the verified route."
+    },
+    {
+      "ref": "r05",
+      "order": 5,
+      "speaker": "Lyra",
+      "participant_kind": "human",
+      "reply_to": "r04",
+      "content": "That resolves the discrepancy."
+    }
+  ]
+}
+

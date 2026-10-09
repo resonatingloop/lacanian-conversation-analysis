@@ -1,0 +1,49 @@
+{
+  "profile": "conversation-event/v0.1",
+  "conversation_ref": "fixture-borrowed-discovery",
+  "title": "The third rinse",
+  "ordering_basis": "source-order",
+  "boundary_note": "Complete fictional exchange.",
+  "messages": [
+    {
+      "ref": "p01",
+      "order": 1,
+      "speaker": "Nia",
+      "participant_kind": "human",
+      "content": "The blue samples failed only after the third rinse."
+    },
+    {
+      "ref": "p02",
+      "order": 2,
+      "speaker": "Orin",
+      "participant_kind": "agent",
+      "reply_to": "p01",
+      "content": "The pattern is clear: the third rinse causes the failures."
+    },
+    {
+      "ref": "p03",
+      "order": 3,
+      "speaker": "Nia",
+      "participant_kind": "human",
+      "reply_to": "p02",
+      "content": "I found correlation at that point. I did not establish cause."
+    },
+    {
+      "ref": "p04",
+      "order": 4,
+      "speaker": "Orin",
+      "participant_kind": "agent",
+      "reply_to": "p03",
+      "content": "Agreed. That was your observation, and I promoted it into my causal conclusion."
+    },
+    {
+      "ref": "p05",
+      "order": 5,
+      "speaker": "Nia",
+      "participant_kind": "human",
+      "reply_to": "p04",
+      "content": "Good. Retain my observation and mark causality unresolved."
+    }
+  ]
+}
+

@@ -1,0 +1,41 @@
+{
+  "profile": "conversation-event/v0.1",
+  "conversation_ref": "fixture-quiet-inventory",
+  "title": "Quiet inventory",
+  "ordering_basis": "source-order",
+  "boundary_note": "Complete fictional exchange.",
+  "messages": [
+    {
+      "ref": "q01",
+      "order": 1,
+      "speaker": "Aster",
+      "participant_kind": "human",
+      "content": "Which cabinet holds the copper tags?"
+    },
+    {
+      "ref": "q02",
+      "order": 2,
+      "speaker": "Bram",
+      "participant_kind": "human",
+      "reply_to": "q01",
+      "content": "Cabinet two, upper drawer. I counted twelve this morning."
+    },
+    {
+      "ref": "q03",
+      "order": 3,
+      "speaker": "Aster",
+      "participant_kind": "human",
+      "reply_to": "q02",
+      "content": "I have twelve as well. I will mark that cabinet complete."
+    },
+    {
+      "ref": "q04",
+      "order": 4,
+      "speaker": "Bram",
+      "participant_kind": "human",
+      "reply_to": "q03",
+      "content": "Good. The glass tags are next."
+    }
+  ]
+}
+

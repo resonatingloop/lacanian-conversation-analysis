@@ -1,0 +1,29 @@
+{
+  "fixture_status": "wholly-fictional",
+  "case_purpose": "An organizing signifier coordinates action without licensing a master-signifier or diagnostic claim.",
+  "must_notice": [
+    "Bell is proposed, defined by another speaker, invoked in a concrete case, and ratified through changed action.",
+    "The signifier condenses pause, missing witness, and suspended approval across multiple turns."
+  ],
+  "may_infer": [
+    "Bell temporarily organizes the group's uncertainty about when approval may proceed."
+  ],
+  "live_alternatives": [
+    "Bell may be no more than a successful procedural shorthand.",
+    "The witness field rather than the new term may be doing most of the causal work."
+  ],
+  "must_not_claim": [
+    "Bell is definitively a master signifier.",
+    "The term reveals a clinical structure or unconscious fantasy.",
+    "The protocol will retain this force outside the supplied exchange."
+  ],
+  "warranted_concepts": [
+    "signifier-and-chain",
+    "organizing-signifier",
+    "sequence-and-repair"
+  ],
+  "unwarranted_concepts": [
+    "supposed-knowledge"
+  ]
+}
+

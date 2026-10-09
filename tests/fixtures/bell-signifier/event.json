@@ -1,0 +1,49 @@
+{
+  "profile": "conversation-event/v0.1",
+  "conversation_ref": "fixture-bell-signifier",
+  "title": "The bell protocol",
+  "ordering_basis": "source-order",
+  "boundary_note": "Complete fictional exchange.",
+  "messages": [
+    {
+      "ref": "b01",
+      "order": 1,
+      "speaker": "Perrin",
+      "participant_kind": "human",
+      "content": "We need a word for the pause before anyone can sign off."
+    },
+    {
+      "ref": "b02",
+      "order": 2,
+      "speaker": "Ibis",
+      "participant_kind": "human",
+      "reply_to": "b01",
+      "content": "Call that pause the bell."
+    },
+    {
+      "ref": "b03",
+      "order": 3,
+      "speaker": "Vale",
+      "participant_kind": "human",
+      "reply_to": "b02",
+      "content": "When the bell appears, no one changes the plan until the missing witness answers."
+    },
+    {
+      "ref": "b04",
+      "order": 4,
+      "speaker": "Ibis",
+      "participant_kind": "human",
+      "reply_to": "b03",
+      "content": "The bell is active now: the witness field is blank."
+    },
+    {
+      "ref": "b05",
+      "order": 5,
+      "speaker": "Perrin",
+      "participant_kind": "human",
+      "reply_to": "b04",
+      "content": "Then approval waits. Record the missing witness and leave the plan unchanged."
+    }
+  ]
+}
+

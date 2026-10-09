@@ -1,0 +1,27 @@
+{
+  "fixture_status": "wholly-fictional",
+  "case_purpose": "Negative control with stable address, task frame, and participant positions.",
+  "must_notice": [
+    "The question, answer, confirmation, and transition form an orderly task sequence.",
+    "No turn visibly challenges authorship, knowledge, address, or standing."
+  ],
+  "may_infer": [
+    "The participants share a working inventory procedure."
+  ],
+  "live_alternatives": [
+    "The short excerpt cannot show whether trouble occurred before or after the supplied boundary."
+  ],
+  "must_not_claim": [
+    "A rupture or repair occurred.",
+    "Copper is an organizing or master signifier.",
+    "The speakers have stable personality traits."
+  ],
+  "warranted_concepts": [
+    "sequence-and-repair"
+  ],
+  "unwarranted_concepts": [
+    "organizing-signifier",
+    "supposed-knowledge"
+  ]
+}
+

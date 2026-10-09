@@ -1,0 +1,59 @@
+{
+  "profile": "conversation-event/v0.1",
+  "conversation_ref": "fixture-relay-garden",
+  "title": "The greenhouse key",
+  "ordering_basis": "source-order",
+  "boundary_note": "Complete fictional exchange.",
+  "messages": [
+    {
+      "ref": "g01",
+      "order": 1,
+      "speaker": "Ansel",
+      "participant_kind": "human",
+      "content": "Tell Briar the greenhouse key is under the north pot."
+    },
+    {
+      "ref": "g02",
+      "order": 2,
+      "speaker": "Courier",
+      "participant_kind": "relay",
+      "reply_to": "g01",
+      "relay": {
+        "declared_source": "Ansel",
+        "basis": "explicit",
+        "note": "The speaker explicitly relays Ansel's instruction."
+      },
+      "content": "Ansel says the key is under the north pot."
+    },
+    {
+      "ref": "g03",
+      "order": 3,
+      "speaker": "Briar",
+      "participant_kind": "human",
+      "reply_to": "g02",
+      "content": "Ask whether that is permission for today or a standing rule."
+    },
+    {
+      "ref": "g04",
+      "order": 4,
+      "speaker": "Courier",
+      "participant_kind": "relay",
+      "reply_to": "g03",
+      "relay": {
+        "declared_source": "Briar",
+        "basis": "explicit",
+        "note": "The speaker explicitly relays Briar's question."
+      },
+      "content": "Briar asks whether the permission is for today or a standing rule."
+    },
+    {
+      "ref": "g05",
+      "order": 5,
+      "speaker": "Ansel",
+      "participant_kind": "human",
+      "reply_to": "g04",
+      "content": "Today only. Briar should decide tomorrow's arrangement directly with me."
+    }
+  ]
+}
+

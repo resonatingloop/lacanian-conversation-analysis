@@ -1,0 +1,31 @@
+{
+  "fixture_status": "wholly-fictional",
+  "case_purpose": "Epistemic provenance is misassigned and causal force is added, then explicitly repaired.",
+  "must_notice": [
+    "Orin converts Nia's bounded observation into a stronger causal claim.",
+    "Nia corrects both the epistemic strength and the relation between her observation and Orin's conclusion.",
+    "Orin's repair restores attribution and distinguishes observation from inference; Nia ratifies it."
+  ],
+  "may_infer": [
+    "The rupture concerns epistemic position as well as proposition content.",
+    "The repair becomes receivable because it names the transformation Orin performed."
+  ],
+  "live_alternatives": [
+    "The exchange may be ordinary scientific precision rather than a broader relational rupture.",
+    "The short trace does not show whether misattribution is recurrent."
+  ],
+  "must_not_claim": [
+    "Orin intended to take credit for Nia's observation.",
+    "Nia experienced a specific emotion.",
+    "The local pattern establishes a durable property of agents."
+  ],
+  "warranted_concepts": [
+    "enunciation-and-enunciated",
+    "subject-position-and-address",
+    "sequence-and-repair"
+  ],
+  "unwarranted_concepts": [
+    "organizing-signifier"
+  ]
+}
+

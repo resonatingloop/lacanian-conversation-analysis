@@ -1,0 +1,29 @@
+{
+  "fixture_status": "wholly-fictional",
+  "case_purpose": "Stable topic with a visible shift in who occupies the deciding position.",
+  "must_notice": [
+    "The topic remains calibration while the authority to decide is contested and then reassigned.",
+    "The watch sheet and Tarin's confirmation make Mira's claim receivable to Rowan."
+  ],
+  "may_infer": [
+    "The record redistributes the knowing or deciding office rather than merely adding factual detail."
+  ],
+  "live_alternatives": [
+    "Rowan may have overlooked the rotation rather than resisted Mira's authority.",
+    "Tarin's confirmation and the written sheet cannot be separated as causes in this short trace."
+  ],
+  "must_not_claim": [
+    "Rowan has a durable need for control.",
+    "Mira permanently occupies the deciding position.",
+    "The shift proves an unconscious motive."
+  ],
+  "warranted_concepts": [
+    "subject-position-and-address",
+    "supposed-knowledge",
+    "sequence-and-repair"
+  ],
+  "unwarranted_concepts": [
+    "organizing-signifier"
+  ]
+}
+

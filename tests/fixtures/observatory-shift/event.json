@@ -1,0 +1,49 @@
+{
+  "profile": "conversation-event/v0.1",
+  "conversation_ref": "fixture-observatory-shift",
+  "title": "Rotating observatory lead",
+  "ordering_basis": "source-order",
+  "boundary_note": "Complete fictional exchange.",
+  "messages": [
+    {
+      "ref": "o01",
+      "order": 1,
+      "speaker": "Mira",
+      "participant_kind": "human",
+      "content": "I will make the final calibration call for tonight's watch."
+    },
+    {
+      "ref": "o02",
+      "order": 2,
+      "speaker": "Rowan",
+      "participant_kind": "human",
+      "reply_to": "o01",
+      "content": "Bring me the readings and I will make the final call."
+    },
+    {
+      "ref": "o03",
+      "order": 3,
+      "speaker": "Mira",
+      "participant_kind": "human",
+      "reply_to": "o02",
+      "content": "The watch sheet assigns the call to the rotating lead. I am listed as lead tonight."
+    },
+    {
+      "ref": "o04",
+      "order": 4,
+      "speaker": "Tarin",
+      "participant_kind": "human",
+      "reply_to": "o03",
+      "content": "The sheet does list Mira. Rowan resumes tomorrow."
+    },
+    {
+      "ref": "o05",
+      "order": 5,
+      "speaker": "Rowan",
+      "participant_kind": "human",
+      "reply_to": "o04",
+      "content": "Understood. Mira makes tonight's call; I will send her my readings."
+    }
+  ]
+}
+
