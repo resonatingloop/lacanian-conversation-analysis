@@ -85,6 +85,24 @@ class PackageContractTests(unittest.TestCase):
                 self.assertIn("wholly fictional fixture", text)
                 self.assertIn("not established", text)
 
+    def test_numbered_example_bundles_separate_trace_and_analysis(self) -> None:
+        case_dirs = sorted(path for path in (ROOT / "examples").iterdir() if path.is_dir())
+        self.assertGreaterEqual(len(case_dirs), 1)
+        for case_dir in case_dirs:
+            with self.subTest(case=case_dir.name):
+                self.assertEqual(
+                    {path.name for path in case_dir.iterdir() if path.is_file()},
+                    {"analysis.md", "conversation.md"},
+                )
+                conversation = (case_dir / "conversation.md").read_text(encoding="utf-8").lower()
+                analysis = (case_dir / "analysis.md").read_text(encoding="utf-8").lower()
+                self.assertIn("wholly synthetic conversation", conversation)
+                self.assertIn("m01", conversation)
+                self.assertNotIn("relational thesis", conversation)
+                self.assertIn("profile: `response/v0.1`", analysis)
+                self.assertIn("not established", analysis)
+                self.assertNotIn("```text", analysis)
+
     def test_no_third_party_source_text_is_bundled(self) -> None:
         prohibited_suffixes = {".pdf", ".epub", ".doc", ".docx"}
         bundled = [path for path in ROOT.rglob("*") if path.is_file() and path.suffix.lower() in prohibited_suffixes]

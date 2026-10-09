@@ -32,6 +32,7 @@ Maintain a portable, evidence-led protocol for Lacanian-style conversation analy
 - `CONTRACTS.md`: normative public behavior.
 - `SKILL.md`: runtime routing and procedure.
 - `references/`: method detail and scholarship.
+- `examples/`: wholly synthetic source/analysis pairs and worked public outputs.
 - `schemas/`: optional normalized interchange.
 - `tests/fixtures/`: synthetic behavioral evidence, not canonical prose.
 - `STATUS.md`: current verification and remaining release gates.

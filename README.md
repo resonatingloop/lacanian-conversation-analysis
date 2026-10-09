@@ -61,7 +61,7 @@ This repository contains no source conversation from the private archive in whic
 | `references/lacanian-warrant.md` | Concept cards and forbidden inferences |
 | `references/output-profiles.md` | Exact response and dossier structures |
 | `assets/markdown-dossier-template.md` | Reusable dossier scaffold |
-| `examples/` | Worked response and dossier on fictional cases |
+| `examples/` | Worked outputs and numbered end-to-end fictional case bundles |
 | `schemas/conversation-event.schema.json` | Optional normalized interchange |
 | `tests/fixtures/` | Fictional cases and expectation-level oracles |
 | `STATUS.md` | Current proof and remaining release gates |
@@ -78,6 +78,8 @@ python3 -m unittest discover -s tests -v
 ```
 
 The suite checks structural contracts, fictional provenance declarations, reply integrity, concept keys, prohibited overclaims, the dossier headings, and package shape. It intentionally avoids golden-prose tests: an analysis can phrase the same warranted claim in more than one responsible way.
+
+The numbered examples keep source and interpretation visibly separate. Start with [`examples/001/conversation.md`](examples/001/conversation.md), then compare it with the independent [`response/v0.1` analysis](examples/001/analysis.md).
 
 ## Scholarship and source use
 
