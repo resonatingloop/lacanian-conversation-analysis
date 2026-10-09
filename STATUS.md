@@ -8,16 +8,16 @@ Last verified: 2026-10-09
 - The repository has one root `SKILL.md`; optional host metadata lives under `agents/`.
 - `response/v0.1`, `markdown-dossier/v0.1`, and `conversation-event/v0.1` are documented and exercised by fictional examples or fixtures.
 - Six wholly fictional fixtures cover a negative control, positional shift, relay, failed/effective repair, organizing signifier, and epistemic-provenance correction.
-- `examples/001/` adds a complete synthetic conversation and its separate `response/v0.1` analysis as the first numbered end-to-end case.
+- `examples/001/` through `examples/005/` provide separate synthetic conversations and `response/v0.1` analyses across positive, adversarial, ambiguous, relay, and runtime-discontinuity cases.
 - `python3 scripts/validate_fixtures.py` passes: 6 fixtures validated.
 - `python3 -m unittest discover -s tests -v` passes: 9 tests.
 - The official skill quick validator passes.
 - The public candidate tree passes an external clean-room scan for source-repository paths, known private role names, UUID-like identifiers, and imported private artifacts.
-- The committed baseline is published at `origin/main` as `47365af` (`lacanian-debut`); the numbered example addition is local and unpushed.
+- The committed baseline is published at `origin/main` as `1fa5114` (`add synthetic example 001`); examples 002–005 are local and unpushed.
 
 ## Working now
 
-- No implementation is in progress. Spec 001 is retired; example 001 is complete locally and awaits owner review for commit or push.
+- No implementation is in progress. Specs 001 and 002 are retired; the expanded example suite is complete locally and awaits owner review for commit or push.
 
 ## Incomplete or broken
 
@@ -33,7 +33,7 @@ Last verified: 2026-10-09
 
 - Exercise both output profiles on an openly publishable, differently structured conversation corpus.
 - Record where that comparison changes the contract, warrant cards, or fixture set.
-- Review and publish the local `examples/001/` addition if accepted.
+- Review and publish the local examples 002–005 suite if accepted.
 
 ## Re-entry notes
 

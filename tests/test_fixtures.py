@@ -87,7 +87,21 @@ class PackageContractTests(unittest.TestCase):
 
     def test_numbered_example_bundles_separate_trace_and_analysis(self) -> None:
         case_dirs = sorted(path for path in (ROOT / "examples").iterdir() if path.is_dir())
-        self.assertGreaterEqual(len(case_dirs), 1)
+        self.assertGreaterEqual(len(case_dirs), 5)
+        self.assertEqual(
+            [path.name for path in case_dirs],
+            [f"{index:03}" for index in range(1, len(case_dirs) + 1)],
+        )
+        required_analysis_sections = (
+            "scope and conditions",
+            "relational thesis",
+            "sequence and phases",
+            "key claims",
+            "lacanian warrant",
+            "alternatives and counterevidence",
+            "adversarial pass",
+            "not established",
+        )
         for case_dir in case_dirs:
             with self.subTest(case=case_dir.name):
                 self.assertEqual(
@@ -102,6 +116,8 @@ class PackageContractTests(unittest.TestCase):
                 self.assertIn("profile: `response/v0.1`", analysis)
                 self.assertIn("not established", analysis)
                 self.assertNotIn("```text", analysis)
+                for section in required_analysis_sections:
+                    self.assertIn(f"## {section}", analysis)
 
     def test_no_third_party_source_text_is_bundled(self) -> None:
         prohibited_suffixes = {".pdf", ".epub", ".doc", ".docx"}

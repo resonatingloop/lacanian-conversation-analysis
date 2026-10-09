@@ -4,7 +4,7 @@ An evidence-led, platform-neutral skill for reconstructing what utterances do to
 
 It reads sequence before symbolism: address, reply, relay, uptake, attributed knowledge, rupture, repair, and phase change. It then applies a deliberately small set of Lacanian concepts only where the event record earns them.
 
-> Experimental `0.1`: tested against six wholly fictional interaction structures. Not yet validated as a stable method on a non-synthetic public corpus.
+> Experimental `0.1`: tested against six wholly fictional fixtures and demonstrated through five end-to-end synthetic cases. Not yet validated as a stable method on a non-synthetic public corpus.
 
 ## What it returns
 
@@ -79,7 +79,17 @@ python3 -m unittest discover -s tests -v
 
 The suite checks structural contracts, fictional provenance declarations, reply integrity, concept keys, prohibited overclaims, the dossier headings, and package shape. It intentionally avoids golden-prose tests: an analysis can phrase the same warranted claim in more than one responsible way.
 
-The numbered examples keep source and interpretation visibly separate. Start with [`examples/001/conversation.md`](examples/001/conversation.md), then compare it with the independent [`response/v0.1` analysis](examples/001/analysis.md).
+### Numbered examples
+
+The numbered examples keep source and interpretation visibly separate. Each case contains one synthetic `conversation.md` and one independent `response/v0.1` `analysis.md`.
+
+| Case | Primary stressor | Source | Analysis |
+|---|---|---|---|
+| 001 — the seam | Epistemic provenance and repair | [conversation](examples/001/conversation.md) | [analysis](examples/001/analysis.md) |
+| 002 — the dead lantern | Seductive mythology-overfit defeated by trace evidence | [conversation](examples/002/conversation.md) | [analysis](examples/002/analysis.md) |
+| 003 — the unthreaded reply | Genuine structural ambiguity and partial output | [conversation](examples/003/conversation.md) | [analysis](examples/003/analysis.md) |
+| 004 — the borrowed voice | Quotation, relay, address, and attributed position | [conversation](examples/004/conversation.md) | [analysis](examples/004/analysis.md) |
+| 005 — same name, new engine | Social-office continuity across runtime discontinuity | [conversation](examples/005/conversation.md) | [analysis](examples/005/analysis.md) |
 
 ## Scholarship and source use
 
